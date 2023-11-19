@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="big">
+        <div class="header">
+            <div class="head">
+                <h2>Login</h2></div>
+            <div class="input">
+                <input type="text">账号
+            </div>
+            <div class="input">
+                <input type="password">密码
+            </div>
+            <div class="btn-box">
+                <a href="#">忘记密码</a>
+            </div>
+            <div>
+                <button id="btn">登录</button>
+                <button>注册</button>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+
+    }
+    .big{
+        background-color: aliceblue;
+    }
+    .header{
+    width: 350px;
+    height: 350px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(1px);
+    background: rgba(50, 50, 50, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;}
+
+    .head{
+        color: rgba(255,255,255,0.9);
+    margin-bottom: 30px;
+
+      
+    }
+    .input{
+        display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+       
+    }
+    .btn-box{
+       
+
+            }
+</style>
+<script>
+  var ctn=document.querySelector("#btn")
+    ctn.onclick=function(){
+        alert("嘿嘿")
+    }
+</script>
+</html>

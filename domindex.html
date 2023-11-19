@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper{
+        width: 300px;
+        height: 200px;
+        background-color: aqua;
+        padding: 100px;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: black
+    }
+</style>
+<body>
+    
+    <div>你好</div>
+    <div>你好1</div>
+    <p id="para">一些文本</p>
+    <button onclick="changeColor('blue')">blue</button>
+    <button onclick="changeColor('red')">red</button>
+    <div class="wrapper">
+        <strong>抽奖</strong>
+        <h1>一等奖: <span id="one">???</span></h1>
+        <h2>二等奖: <span id="two">???</span></h2>
+        <h3>三等奖: <span id="three">???</span></h3>
+    </div>
+    <div class="box"></div>
+    
+    <script>
+       /*  var div1=document.getElementsByTagName("div")[0]
+        div1.innerHTML="你好2222"
+       function changeColor(f1){
+        var elem=document.getElementById("para")
+        elem.style.color=f1
+
+       }
+       const box=document.querySelector(".box")
+       box.innerHTML="我是一个盒子" 
+       const arr=["小明","小红","小花","小布",]
+       const random=Math.floor(Math.random()*arr.length)
+       const one=document.querySelector('#one')
+       one.innerHTML=arr[random]
+       arr.splice(random,1) 
+
+       console.log(arr);
+       const random1=Math.floor(Math.random()*arr.length)
+       const two=document.querySelector('#two')
+       two.innerHTML=arr[random1]
+       arr.splice(random1,1)
+       console.log(arr);
+       
+       const random2=Math.floor(Math.random()*arr.length)
+       const three=document.querySelector('#three')
+       three.innerHTML=arr[random2]
+       arr.splice(random2,1)
+       console.log(arr); */
+       const box=document.querySelector(".box")
+       box.style.width='200px  '
+       
+       
+    </script>
+</body>
+</html>

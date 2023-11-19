@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 10px;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        border: 1px dashed #ccc;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <div id="block">默认内容</div>
+    <div id="container">
+    <p>默认文本</p>
+    <p class="item">默认文本</p>
+    <p>默认文本</p>
+    <p>默认文本</p>
+    </div>   
+</body>
+<script>
+    var textArr=[
+        '震山的虎',
+        '敏捷的豹',
+        '远见的鹰',
+        '善战的狼'
+       ]
+    var block= document.getElementById("block") //根据id获取     textContent：更改文本内容
+    console.log(block);
+    block.textContent="新的内容"
+    
+   // var contents=document.getElementsByTagName("p") //根据标签名获取、,获取p标签
+   //var contents=document.querySelectorAll(".text") //根据选择器获取 获取text 需要加上.
+   var contents=document.querySelectorAll("#container p")//根据选择器获取p标签 
+    console.log(contents);
+   // contents[0].textContent="今天星期一"  //根据下标更改文本内容
+
+
+    for(var i=0;i<contents.length;i++){
+        contents[i].textContent=textArr[i]
+    }
+
+     var second= document.querySelector(".item")       //获取选择器的一个元素
+     second.textContent='替罪的羊'
+     second.previousElementSibling.textContent='划水的鱼'//改变上一个元素
+     second.nextElementSibling.textContent='装饭的桶'     //改变下一个元素
+
+     var container=second.parentNode      //获取父元素
+     // container.textContent="哈哈哈哈"
+      
+</script>
+</html>
